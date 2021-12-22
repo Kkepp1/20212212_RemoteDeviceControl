@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/neni"
+    tools:context=".MainActivity">
+/////////////////////////////////////////////////////////////////////////////////////
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:background="#BF3E3B3B"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@drawable/tab_color"
+        app:itemIconSize="33dp"
+        app:menu="@menu/navigation_menu" />
+    ////////////cuon màn hình//////////////////////////////////////////////
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="37dp"
+        android:textSize="20dp"
+        android:text="SCHOOL"
+        android:textColor="@color/white"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="21dp"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:text="Lạng Sơn" />
+
+        <TextView
+            android:id="@+id/texttemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:text="33°C"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="178dp"
+            app:srcCompat="@drawable/ic_drop" />
+
+    <TextView
+        android:id="@+id/texthumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="177dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        android:text="54%" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="Thiết bị" />
+/////////////////////////////////////////////left
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardt1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="255dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icont1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="left light1" />
+            <TextView
+                android:id="@+id/ttt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardt2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="375dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icont2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="left light2" />
+            <TextView
+                android:id="@+id/ttt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardt3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="495dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icont3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="left light3" />
+            <TextView
+                android:id="@+id/ttt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    /////////////////////// left
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardq1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iconq1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_fan" />
+
+            <TextView
+                android:id="@+id/textq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="fan1" />
+            <TextView
+                android:id="@+id/ttq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardq2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="375dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iconq2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_fan" />
+
+            <TextView
+                android:id="@+id/textq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="fan2" />
+            <TextView
+                android:id="@+id/ttq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+///////////////// center
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardp1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iconp1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="right light1" />
+
+            <TextView
+                android:id="@+id/ttp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Tắt"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardp2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="375dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iconp2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="right light2" />
+            <TextView
+                android:id="@+id/ttp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardp3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="495dp"
+        app:cardBackgroundColor="#A15A5252"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iconp3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_light_bulb" />
+
+            <TextView
+                android:id="@+id/textp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:text="right light3" />
+            <TextView
+                android:id="@+id/ttp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Tắt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
